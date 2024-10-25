@@ -7,27 +7,61 @@ intents:
   - deny
   - mood_great
   - mood_unhappy
+  - data2bots_about
+  - data2bots_mission
+  - data2bots_vision
+  - relevance_to_me
+  - relevance_talent
+  - relevance_employer
+  - data2bots_locations
+  - data2bots_people
   - bot_challenge
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+    - text: "Hey! How are you?"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_about:
+    - text: "Data2Bots is an IT consulting company committed to providing our clients with cutting-edge and effective data solutions and strategies to improve their business productivity. Through a fusion of technological innovation, they foster lasting impact and sustainable growth. Data2Bots actively contributes to cultivating an environment that fosters creative innovation and excellence across all operations. They seamlessly navigate the complexities of data, leveraging cutting-edge technologies and insights to develop bespoke solutions tailored to their client's unique challenges."
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+  utter_mission:
+    - text: "Data2Bots aims to empower organizations through the strategic application of innovative technology solutions."
+
+  utter_vision:
+    - text: "Data2Bots's vision is to become the go-to partner for organizations seeking data-driven solutions."
+
+  utter_relevance_to_me:
+    - text: "Data2Bots can help both clients and talents reach their goals more efficiently."
+
+  utter_ask_role:
+    - text: "Are you an employer or do you have technical talent?"
+
+  utter_relevance_talent:
+    - text: "Data2Employ utilizes data to connect job seekers with career opportunities in an effort to address the national unemployment crisis. Providing a platform that enables the government to predict future skill requirements in real time in order to empower individuals, guide policies, and promote socio economic progress."
+
+  utter_relevance_employer:
+    - text: "Data2Hire uses data to empower HR professionals to make informed decisions, optimize talent acquisition and retention, and strategically plan their workforce based on skills, salary, competition, and diversity. Transform your HR strategies with Data2Hire and stay ahead in the ever-evolving landscape of talent management and workforce planning."
+
+  utter_location:
+    - text: "In Netherland, Data2Bots is located at 'Homburg 19, 4153 XM Beesd', and in Nigeria, at 'Millennium Builders' Plaza, Plot 251 Herbert Macaulay Way, Central Business District, Abuja'. You should pay a visit."
+
+  utter_people:
+    - text: "A lot of amazing people come together to make Data2Bots. Dami Oke, MBA is the CEO"
+
+  offer_information:
+    - text: "I can tell you about Data2bots. What would you like to know?"
+
+  ask_anything_else:
+    - text: "I can tell you more. What else would you like to know? about Data2bots"
 
   utter_happy:
-  - text: "Great, carry on!"
+    - text: "Great, Let's proceed!"
 
   utter_goodbye:
-  - text: "Bye"
+    - text: "Bye. Let me know if you have any more questions"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+    - text: "I am a bot, built by Tao and Othniel. I can tell you about Data2Bots. I am powered by Rasa."
 
 session_config:
   session_expiration_time: 60

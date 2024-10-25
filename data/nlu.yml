@@ -1,91 +1,239 @@
 version: "3.1"
 
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - goodmorning
+      - moin
+      - good afternoon
+      - afternoon
+      - good day
+      - goodday
+      - good evening
+      - goodevening
+      - evening
+      - hey there
+      - let's go
+      - hey dude
 
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
 
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
 
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - i don't think so
+      - don't like that
+      - no way
+      - not really
+      - not so sure
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - i am feeling very good
+      - i am great
+      - i am amazing
+      - i am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
 
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - i am sad
+      - i don't feel very well
+      - i am disappointed
+      - super sad
+      - i'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
 
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am i talking to a bot?
+      - am i talking to a human?
+
+  - intent: data2bots_about
+    examples: |
+      - who are data2bots?
+      - tell me about data2bots
+      - i want to know about data2bots
+      - i'm curious about data2bots
+      - what is data2bots?
+      - give me information about data2bots
+      - can you tell me about data2bots?
+      - what does data2bots do?
+      - what is the purpose of data2bots?
+      - what services does data2bots offer?
+      - what is the history of data2bots?
+      - how did data2bots start?
+      - what is the background of data2bots?
+      - what is the story behind data2bots?
+      - what does data2bots specialize in?
+
+  - intent: data2bots_mission
+    examples: |
+      - what is data2bots mission?
+      - tell me about data2bots mission
+      - what is their mission?
+      - tell me about their mission
+      - what does data2bot aim to achieve?
+      - what are the goals of data2bots?
+      - what is the purpose of data2bots?
+      - what is the objective of data2bots?
+      - what does data2bots strive for?
+      - what is the mission statement of data2bots?
+      - what is the core mission of data2bots?
+      - what is the primary mission of data2bots?
+      - what is the main mission of data2bots?
+
+  - intent: data2bots_vision
+    examples: |
+      - what is data2bots vision?
+      - tell me about data2bots vision
+      - what is their vision?
+      - tell me about their vision
+      - how does data2bot see the future?
+      - what are data2bots' future goals?
+      - what does data2bots aspire to achieve?
+      - what is the long-term vision of data2bots?
+      - what future does data2bots envision?
+      - what are the aspirations of data2bots?
+      - what is the future outlook of data2bots?
+
+  - intent: relevance_to_me
+    examples: |
+      - how can data2bots help me
+      - how is data2bots relevant to me
+      - why should i be interested in data2bots?
+      - should i be more interested in data2bots?
+
+  - intent: relevance_talent
+    examples: |
+      - i am a developer
+      - i have a technical talent
+      - i have technical skills
+      - i am looking for a job
+      - i am open to new roles
+      - i want to work in tech
+      - i am a software engineer
+      - i have programming skills
+      - i am a data scientist
+      - i am a data analyst
+      - i have experience in IT
+      - i am interested in tech opportunities
+      - i am a tech enthusiast
+      - i have a background in technology
+      - i am skilled in coding
+      - i am proficient in software development
+      - i am a frontend engineer
+      - i am a ui designer
+      - i am a backend engineer
+      - i am a software engineer
+      - i am a data scientist
+      - i am a machine learning engineer
+      - i am a devops engineer
+      - i am a full stack developer
+      - i am a mobile app developer
+      - i am a product manager
+      - i am a project manager
+      - i am a qa engineer
+      - i am a technical writer
+      - i am a systems analyst
+      - i am a network engineer
+      - i am a cybersecurity expert
+      - i am a cloud engineer
+
+  - intent: relevance_employer
+    examples: |
+      - i run a company
+      - i am looking for quality talents
+      - i want to start a new company
+      - i work in human resources
+      - i am an entrepreneur
+      - i am expanding my company's work force
+      - we are hiring new technical talents
+      - we want to hire from africa
+      - i need help managing talents seamlessly
+      - i am a recruiter
+      - i am in charge of hiring
+      - i need to find skilled professionals
+      - i am looking for tech experts
+      - i need to fill tech positions
+      - i am searching for developers
+      - i need to hire software engineers
+      - i am looking for data scientists
+      - i need to recruit IT professionals
+      - i am seeking tech talent
+      - i need to hire programmers
+      - we need to optimise talent management
+
+  - intent: data2bots_locations
+    examples: |
+      - where is data2bots?
+      - where is data2bots located?
+      - where are they located?
+      - where can i locate data2bots?
+      - i want to visit data2bots
+      - where does data2bots have offices?
+      - what is the address of data2bots?
+      - where is the headquarters of data2bots?
+      - where is the main office of data2bots?
+      - where can i find data2bots?
+      - where is data2bots based?
+      - where is data2bots' main location?
+
+  - intent: data2bots_people
+    examples: |
+      - who is the ceo of data2bots?
+      - who runs data2bots?
+      - who founded data2bots?
+      - who are the key people at data2bots?
+      - who is in charge at data2bots?
+      - who are the leaders of data2bots?
+      - who are the executives at data2bots?
+      - who is the founder of data2bots?
+      - who are the team members at data2bots?
+      - who is the head of data2bots?

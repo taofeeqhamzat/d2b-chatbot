@@ -1,30 +1,190 @@
 version: "3.1"
 
 stories:
+  - story: welcome user
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: utter_iamabot
+      - action: offer_information
 
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - story: sad path 1
+    steps:
+      - action: utter_greet
+      - action: utter_iamabot
+      - intent: mood_unhappy
+      - action: offer_information
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - story: sad path 2
+    steps:
+      - action: offer_information
 
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  # about
+  - story: about path
+    steps:
+      - intent: data2bots_about
+      - action: utter_about
+      - action: ask_anything_else
+
+  - story: about path - offer
+    steps:
+      - action: offer_information
+      - intent: data2bots_about
+      - action: utter_about
+      - action: ask_anything_else
+
+  - story: about path - offer more
+    steps:
+      - action: ask_anything_else
+      - intent: data2bots_about
+      - action: utter_about
+      - action: ask_anything_else
+
+  # mission
+  - story: mission path
+    steps:
+      - intent: data2bots_mission
+      - action: utter_mission
+      - action: ask_anything_else
+
+  - story: mission path - offer
+    steps:
+      - action: offer_information
+      - intent: data2bots_mission
+      - action: utter_mission
+      - action: ask_anything_else
+
+  - story: mission path - offer more
+    steps:
+      - action: ask_anything_else
+      - intent: data2bots_mission
+      - action: utter_mission
+      - action: ask_anything_else
+
+  # vision
+  - story: vision path
+    steps:
+      - intent: data2bots_vision
+      - action: utter_vision
+      - action: ask_anything_else
+
+  - story: vision path - offer
+    steps:
+      - action: offer_information
+      - intent: data2bots_vision
+      - action: utter_vision
+      - action: ask_anything_else
+
+  - story: vision path - offer more
+    steps:
+      - action: ask_anything_else
+      - intent: data2bots_vision
+      - action: utter_vision
+      - action: ask_anything_else
+
+  # relevance
+  - story: relevance path
+    steps:
+      - intent: relevance_to_me
+      - action: utter_relevance_to_me
+      - action: utter_ask_role
+
+  - story: relevance path - offer
+    steps:
+      - action: offer_information
+      - intent: relevance_to_me
+      - action: utter_relevance_to_me
+      - action: utter_ask_role
+
+  - story: relevance path - offer more
+    steps:
+      - action: ask_anything_else
+      - intent: relevance_to_me
+      - action: utter_relevance_to_me
+      - action: utter_ask_role
+
+  # talent
+  - story: relevance to talent
+    steps:
+      - intent: relevance_talent
+      - action: utter_relevance_talent
+      - action: ask_anything_else
+
+  - story: relevance to talent - offer
+    steps:
+      - action: offer_information
+      - intent: relevance_talent
+      - action: utter_relevance_talent
+      - action: ask_anything_else
+
+  - story: relevance to talent - offer more
+    steps:
+      - action: ask_anything_else
+      - intent: relevance_talent
+      - action: utter_relevance_talent
+      - action: ask_anything_else
+
+  # employer
+  - story: relevance to employer
+    steps:
+      - action: ask_anything_else
+      - intent: relevance_employer
+      - action: utter_relevance_employer
+      - action: ask_anything_else
+
+  - story: relevance to employer - offer
+    steps:
+      - action: offer_information
+      - intent: relevance_employer
+      - action: utter_relevance_employer
+      - action: ask_anything_else
+
+  - story: relevance to employer - offer more
+    steps:
+      - action: ask_anything_else
+      - intent: relevance_employer
+      - action: utter_relevance_employer
+      - action: ask_anything_else
+
+  # location
+  - story: location path
+    steps:
+      - intent: data2bots_locations
+      - action: utter_location
+      - action: ask_anything_else
+
+  - story: location path - offer
+    steps:
+      - action: offer_information
+      - intent: data2bots_locations
+      - action: utter_location
+      - action: ask_anything_else
+
+  - story: location path - offer more
+    steps:
+      - action: ask_anything_else
+      - intent: data2bots_locations
+      - action: utter_location
+      - action: ask_anything_else
+
+  # people
+  - story: people path
+    steps:
+      - action: ask_anything_else
+      - intent: data2bots_people
+      - action: utter_people
+      - action: ask_anything_else
+
+  - story: people path - offer
+    steps:
+      - action: ask_anything_else
+      - intent: data2bots_people
+      - action: utter_people
+      - action: ask_anything_else
+
+  - story: people path - offer more
+    steps:
+      - action: ask_anything_else
+      - intent: data2bots_people
+      - action: utter_people
+      - action: ask_anything_else
